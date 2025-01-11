@@ -1,0 +1,49 @@
+.bgPane{
+
+    -fx-background-color: linear-gradient( to bottom,  #F3F3F3 10%,  #F3F3F3 100%);
+
+    /*
+    #FFAC00 jaune
+    #00BEBD verte
+    #F3F3F3 white
+    */
+
+}
+.bgPane2{
+    -fx-background-color:#00BEBD ;
+}
+
+.btnStart{
+    -fx-background-radius: 10;
+
+}
+.btnStart:hover{
+    -fx-background-color:#FFAC00 ;
+    -fx-text-fill: #F3F3F3;
+    -fx-cursor: hand;
+
+}
+
+#customField {
+    -fx-border-color:  #6696E8;
+}
+
+.btn_scale{
+    -fx-background-color: #6696E8;
+    -fx-background-radius: 30 0 0 30;
+}
+.btn_scale:hover{
+    -fx-background-color: #FFAC00 ;
+}
+
+.btnAction{
+    -fx-border-color: #00BEBD;
+}
+
+/*.rootPane{
+    -fx-background-image: url('bgFlat.jpg');
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-position: left center;
+}*/

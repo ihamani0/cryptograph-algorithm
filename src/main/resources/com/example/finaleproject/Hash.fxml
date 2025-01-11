@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaleproject.HashController">
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="571.0" style="-fx-background-radius: 40 0 0 40;" styleClass="bgPane2" stylesheets="@Main.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="-153.0" layoutY="-308.0" prefHeight="258.0" prefWidth="454.0" rotate="50.7" style="-fx-background-color: #FFAC00; -fx-background-radius: 70;" />
+            <HBox alignment="CENTER" layoutY="22.0" prefHeight="42.0" prefWidth="521.0" AnchorPane.bottomAnchor="435.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0">
+               <children>
+                  <Label text="Hash Generator" textFill="#564d4d" underline="true">
+                     <font>
+                        <Font name="Cambria Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextArea fx:id="TextFeild_InputText" layoutX="70.0" layoutY="107.0" prefHeight="78.0" prefWidth="335.0" promptText="Plain Text" wrapText="true" />
+            <Label layoutX="74.0" layoutY="79.0" prefHeight="18.0" prefWidth="167.0" text="Enter string :">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="196.0" prefHeight="18.0" prefWidth="122.0" text="Hash Algorithm:">
+               <font>
+                  <Font name="Cambria" size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ComboBox_keySize" layoutX="70.0" layoutY="215.0" prefHeight="35.0" prefWidth="258.0" />
+            <MFXButton fx:id="btn_generateHash" layoutX="71.0" layoutY="272.0" prefHeight="34.0" prefWidth="171.0" style="-fx-background-color: #FFAC00;" text="Generate Hash" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </MFXButton>
+            <TextArea fx:id="TextFeild_HashText" layoutX="70.0" layoutY="324.0" prefHeight="78.0" prefWidth="335.0" promptText="Hash Text" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="112.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="502.0" prefWidth="112.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 0 40 40 0;">
+               <children>
+                  <AnchorPane prefHeight="500.0" prefWidth="113.0" style="-fx-background-radius: 0 40 40 0;">
+                     <children>
+                        <Button fx:id="btnBack" layoutX="149.33333333333334" layoutY="91.2" mnemonicParsing="false" prefHeight="58.0" prefWidth="80.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30 0 0 30;" textFill="#cec2c2" AnchorPane.bottomAnchor="351.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="91.0">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/left-arrow.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="btnClassic" layoutX="77.0" layoutY="179.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30 0 0 30;" textFill="#cec2c2" AnchorPane.bottomAnchor="261.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="179.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/padlockClas.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_info" layoutX="47.0" layoutY="405.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="65.0" styleClass="btn_scale" stylesheets="@Main.css" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="Cambria Bold" size="26.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/info_471662.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

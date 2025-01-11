@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finaleproject.AsymmetricController">
+    <left>
+        <AnchorPane prefHeight="502.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="502.0" prefWidth="124.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 0 40 40 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <AnchorPane prefHeight="500.0" prefWidth="150.0" style="-fx-background-radius: 0 40 40 0;">
+                            <children>
+                                <Button fx:id="btnBack" layoutX="88.8" layoutY="62.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30 0 0 30;" textFill="#cec2c2" AnchorPane.bottomAnchor="396.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button fx:id="btnClassic" layoutX="89.0" layoutY="120.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="61.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30 0 0 30;" textFill="#cec2c2">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                  <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="105.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@image/left-arrow.png" />
+                                      </image>
+                                      <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                      </cursor>
+                                  </ImageView>
+                                  <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="105.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@image/padlockClas.png" />
+                                      </image>
+                                      <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                      </cursor>
+                                  </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 40 0 0 40;" styleClass="bgPane2" stylesheets="@Main.css" BorderPane.alignment="CENTER">
+            <children>
+                <Pane layoutX="-1.0" layoutY="-284.0" prefHeight="258.0" prefWidth="454.0" rotate="50.7" style="-fx-background-color: #FFAC00; -fx-background-radius: 70;" />
+                <HBox alignment="CENTER" layoutY="167.0" prefHeight="119.0" prefWidth="511.0" AnchorPane.bottomAnchor="213.33333333333331" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="167.0">
+                    <children>
+                        <AnchorPane prefHeight="119.0" prefWidth="511.0">
+                            <children>
+                                <Button fx:id="btnHash" mnemonicParsing="false" prefHeight="119.0" prefWidth="131.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30 30 30 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="279.0" AnchorPane.topAnchor="0.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <graphic>
+                                        <ImageView fitHeight="60.0" fitWidth="60.0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/hashtag_1946421.png" />
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Button fx:id="btnRSA" layoutX="60.0" layoutY="10.0" mnemonicParsing="false" prefHeight="119.0" prefWidth="119.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <graphic>
+                                        <ImageView fitHeight="59.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/cyber-security_4492256.png" />
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Label alignment="CENTER" layoutX="313.0" layoutY="87.0" prefHeight="28.0" prefWidth="54.0" text="RSA" textFill="#434343">
+                                    <font>
+                                        <Font name="Cambria" size="18.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Label>
+                                <Label alignment="CENTER" layoutX="124.0" layoutY="85.0" prefHeight="31.0" prefWidth="77.0" text="HASH" textFill="#434343">
+                                    <font>
+                                        <Font name="Cambria" size="18.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="-1.0" layoutY="329.0" prefHeight="119.0" prefWidth="511.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="329.0">
+                    <children>
+                        <AnchorPane prefHeight="119.0" prefWidth="511.0">
+                            <children>
+                                <Button fx:id="btnDSA" layoutX="98.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="130.0" style="-fx-background-color: #6696E8; -fx-background-radius: 30;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="0.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <graphic>
+                                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@image/signature-lock_9798202.png" />
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                            </cursor>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                                <Label alignment="CENTER" layoutX="134.0" layoutY="91.0" prefHeight="30.0" prefWidth="58.0" text="DSA" textFill="#434343">
+                                    <font>
+                                        <Font name="Cambria" size="18.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="81.0" prefHeight="44.0" prefWidth="393.0" text="Asemmetric Crypto" textAlignment="CENTER" textFill="#484040">
+               <font>
+                  <Font name="Cambria Bold" size="33.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

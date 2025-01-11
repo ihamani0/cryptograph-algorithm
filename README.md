@@ -3,8 +3,10 @@ This project is a comprehensive encryption tool developed using JavaFX. It bridg
 
 **Features**
 **Legacy Algorithms:**
-  -Caesar Cipher
-  -Vigenère Cipher
+
+  Caesar Cipher
+  
+  Vigenère Cipher
 
 **Modern Algorithms:**
 
